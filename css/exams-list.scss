@@ -1,0 +1,111 @@
+@import "_fonts";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    direction: rtl;
+    font-family: dana;
+}
+body{
+    .exams-list-main{
+        display: flex;
+        align-items: center;
+        @mixin flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;            
+        }
+        @mixin button {
+            border: none;
+            outline: none;
+            background: #333333;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover{
+                background: #4d4d4d;
+            }
+            @media (max-width:425px){
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+        .side-section{
+            position: fixed;
+            width: 160px;
+            background: #C4C4C4;
+            height: 100vh;
+            @media (max-width:768px){
+                display: none;
+            }
+        }
+        .main-section{
+            background: white;
+            flex: 1;
+            margin-right: 160px;
+            height: 100vh;
+            padding: 50px;
+            @media (max-width:768px){
+                margin-right: 0;
+                padding: 30px 15px;
+            }
+            .title{
+                @include flex;
+                h1{
+                    @media (max-width:425px){
+                        font-size: 22px;
+                    }
+                }
+                button{
+                  @include button;
+                }
+            }
+          
+            .exam-list{
+                margin-top: 30px;
+                .header{
+                    @include flex;
+                    background: #333333;
+                    padding: 15px 30px;
+                    color: white;
+                    border-radius: 5px;
+                    @media (max-width:425px){
+                        padding: 14px 10px;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-weight: bolder;
+                    }
+                }
+                .content{
+                    margin-top: 20px;
+                    padding: 15px 30px;
+                    padding-left: 0;
+                    @media (max-width:425px){
+                        padding: 15px 0px;
+                    }
+                    .row{
+                        @include flex;
+                        p{
+                            color: #333333;
+                            font-weight: bold;
+                            @media (max-width:425px){
+                                font-size: 14px;
+                            }
+                        }
+                        .buttons{
+                            button{
+                                @include button;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

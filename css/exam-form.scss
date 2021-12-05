@@ -1,0 +1,250 @@
+@import "_fonts";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    direction: rtl;
+    font-family: dana;
+}
+body{
+    .exam-form-main{
+        display: flex;
+        align-items: center;
+        @mixin flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;            
+        }
+        @mixin seprator {
+            @include flex;
+            gap: 10px;
+            hr{
+                flex: 1;
+            }
+        }
+        @mixin button {
+            border: none;
+            outline: none;
+            background: #333333;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover{
+                background: #4d4d4d;
+            }
+        }
+        .side-section{
+            position: fixed;
+            width: 160px;
+            background: #C4C4C4;
+            height: 100vh;
+            @media (max-width:768px){
+                display: none;
+            }
+        }
+        .main-section{
+            background: white;
+            flex: 1;
+            margin-right: 160px;
+            height: 100vh;
+            padding: 50px;
+            @media (max-width:768px){
+                margin-right: 0;
+                padding: 30px 15px;
+            }
+            .exam-initial{
+                margin-top: 30px;
+                .form-info{
+                    margin: 20px 0 40px;
+                    .header{
+                        @include seprator;
+                    }
+                    .info-content{
+                        margin: 10px 0;
+                        .item{
+                            margin: 10px 0;
+                            input[type = checkbox]{
+                                cursor: pointer;
+                            }
+                            #age-range{
+                                margin: 10px 0;
+                                display: none;
+                                gap: 5px;
+                                align-items: center;
+                                hr{
+                                    width: 14px;
+                                }
+                                >div{
+                                    p{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        input{
+                                            outline: none;
+                                            border: 1px solid #000000;
+                                            border-radius: 6px;
+                                            padding: 10px;
+                                            width: 70px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .criterion{
+                    .header{
+                        @include seprator;
+                        button{
+                            @include button;
+                        }
+                    }
+                    .criteria-container{
+                        .criterion-content{
+                            margin-top: 30px;
+                            background: #eee;
+                            padding: 20px 30px;
+                            border-radius:10px;
+                            input[name=criterion-input]{
+                                width: 100%;
+                                margin-top: 10px;
+                                padding: 15px;
+                                border-radius: 6px;
+                                outline: none;
+                                border: 1px solid #000000;
+                                font-family: inherit;
+                                font-size: 16px;
+                                @media (max-width:768px){
+                                    padding: 7px;
+                                }
+                            }
+                            .questions{
+                                .question{
+                                    margin: 25px 0;
+                                    border-right: 5px solid #333333;
+                                    border-bottom-right-radius: 2px;
+                                    padding-right: 25px;
+                                    @media (max-width:768px){
+                                        padding-right: 15px;
+                                    }
+                                    // .question-cat{
+    
+                                    // }
+                                    .question-content{
+                                        margin: 20px 0;
+                                    }
+                                    .question-caption{ 
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                        margin: 15px;
+                                        // .caption{
+    
+                                        // }
+                                        input{
+                                            width: 114px;
+                                            padding:5px 10px;
+                                            outline: none;
+                                            border: 1px solid #000000;
+                                            border-radius: 6px;
+                                            font-family: inherit;
+                                        }
+                                    }
+                                }
+                            }
+                            button{
+                                @include button;
+                                margin-top: 20px;
+                            }
+                            
+                        }
+                        .backdrop{
+                            position: fixed;
+                            height: 100vh;
+                            width: 100vw;
+                            left: 0;
+                            top: 0;
+                            background: rgba(0,0,0,0.3);
+                            display: none;
+                            transition: all ease 0.3s;
+                            &.open{
+                                display: block;
+                            }
+                            .modal{
+                                margin: 200px auto;
+                                width: 330px;
+                                padding: 30px;
+                                background: white;
+                                border-radius: 6px;
+                                @media (max-width:600px){
+                                    width: 250px;
+                                }
+                                .modal-content{
+                                    margin: auto;
+                                    max-width: 300px;
+                                    .category{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        margin: 30px 0;
+                                        @media (max-width:600px){
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            gap: 5px;
+                                        }
+                                        label{
+                                            width: 85px;
+                                        }
+                                        select{
+                                            padding: 8px 5px;
+                                            border: 1px solid #000000;
+                                            border-radius: 6px;
+                                            flex: 1;
+                                            cursor: pointer;
+                                            @media (max-width:600px){
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .number{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        margin: 30px 0;
+                                        @media (max-width:600px){
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            gap: 5px;
+                                        }
+                                        label{
+                                            width: 85px;
+                                        }
+                                        input{
+                                            padding:8px 5px;
+                                            outline: none;
+                                            border: 1px solid #000000;
+                                            border-radius: 6px;
+                                            font-family: inherit;
+                                            flex: 1;
+                                            @media (max-width:600px){
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    button{
+                                        @include button;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
