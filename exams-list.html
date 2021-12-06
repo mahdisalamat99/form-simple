@@ -14,24 +14,42 @@
         <div class="main-section">
             <div class="title">
                 <h1>لیست آزمون ها</h1>
-                <button>ایجاد آزمون جدید</button>
+                <button onclick="openExamModal()">ایجاد آزمون جدید</button>
             </div>
             <div class="exam-list">
                 <div class="header">
+                    <span>ردیف</span>
                     <span>لیست آزمون ها</span>
+                    <span>تاریخ ثبت</span>
                     <span>امکانات</span>
                 </div>
-                <div class="content">
-                    <div class="row">
+                <div class="content" id="exams-containter">
+                    <!-- <div class="row">
                         <p>آزمون روانشناسی میلر</p>
                         <div class="buttons">
                             <button>ویرایش</button>
                             <button>حذف آزمون</button>
                         </div>
+                    </div> -->
+                </div>
+                <div class="backdrop" onclick="closeExamModal()">
+                    <div class="modal" onclick="event.stopPropagation()">
+                        <div class="modal-content">
+                            <div class="form">
+                                <label for="exam-name" >نام آزمون</label>
+                                <div class="input-container">
+                                    <input type="text" name="exam-name" id="exam-name">
+                                    <span id="alert-ms">لطفا نام آزمون را وارد کنید</span>
+                                </div>
+                            </div>
+                            <button id="add-exam-btn" onclick="addExam(event)">افزودن</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/exam-list.js"></script>
 </body>
 </html>

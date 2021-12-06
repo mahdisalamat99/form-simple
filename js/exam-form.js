@@ -141,7 +141,7 @@ function printQuestion(id){
 
 function deleteQuestion(e,qId,cId){
     let myCriteria = criteria.filter(item => item.id == cId)[0];
-    console.log(myCriteria.questions.filter(elem=>elem.qId!=qId),qId);
+    // console.log(myCriteria.questions.filter(elem=>elem.qId!=qId),qId);
     myCriteria.questions = myCriteria.questions.filter(elem=>elem.qId!=qId);
     console.log(myCriteria);
     printQuestion(cId);

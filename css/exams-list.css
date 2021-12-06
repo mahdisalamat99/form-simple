@@ -345,6 +345,7 @@ body .exams-list-main .main-section .exam-list .content .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 10px 0;
 }
 
 body .exams-list-main .main-section .exam-list .content .row p {
@@ -376,6 +377,121 @@ body .exams-list-main .main-section .exam-list .content .row .buttons button:hov
 
 @media (max-width: 425px) {
   body .exams-list-main .main-section .exam-list .content .row .buttons button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+body .exams-list-main .main-section .exam-list .backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  display: none;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop.open {
+  display: block;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  width: 330px;
+  background: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .backdrop .modal {
+    width: 250px;
+  }
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content {
+  margin: auto;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form label {
+  min-width: 40px;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container input {
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container input {
+    width: 100%;
+  }
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container span {
+  display: none;
+  margin-top: 15px;
+  color: red;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container span.active {
+  display: block;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button {
+  border: none;
+  outline: none;
+  background: #333333;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button:hover {
+  background: #4d4d4d;
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button {
     font-size: 12px;
     padding: 8px 12px;
   }
