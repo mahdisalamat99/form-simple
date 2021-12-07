@@ -65,6 +65,24 @@ body{
                   @include button;
                 }
             }
+
+            .search-bar{
+                margin: 20px 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 30px;
+                input{
+                    border: 1px solid #333333;
+                    border-radius: 4px;
+                    outline: none;
+                    padding:10px 20px;
+                    background: none;
+                    font-family: inherit;
+                    flex: 0.4;
+                }
+            }
           
             .exam-list{
                 margin-top: 30px;

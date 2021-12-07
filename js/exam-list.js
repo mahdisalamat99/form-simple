@@ -50,10 +50,15 @@ function addExam(id){
 
     closeExamModal();
     printExam();
+    console.log(examList);
 };
 
-function printExam(){
-    let examStr = examList.reduce((total,item)=>{
+function printExam(e){
+    // add search functionality
+    let searchStr = e?.target.value || "";
+    let examStr = examList.filter(item => item.examName.indexOf(searchStr)>-1).reduce((total,item)=>{
+    // end adding search functionality
+        
         return total+ `
         <div class="row">
         <p>${item.rowNum}</p>
@@ -61,7 +66,7 @@ function printExam(){
         <p>${item.minutes} :${item.hour} - ${item.year}/${item.month}/${item.day} </p>
         <div class="buttons">
             <button onclick="editExamName(${item.id})" id="edit-btn">ویرایش</button>
-            <button onclick="deleteExam(${item.id})">حذف آزمون</button>
+            <button onclick="deleteExam(${item.id})">حذف </button>
         </div>
     </div>`
     },"")
@@ -79,5 +84,4 @@ function editExamName(id){
     selectedExamList = examList.filter(exam => exam.id == id)[0];
     document.querySelector("#exam-name").value = selectedExamList.examName;
 }
-
 

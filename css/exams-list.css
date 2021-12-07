@@ -292,6 +292,33 @@ body .exams-list-main .main-section .title button:hover {
   }
 }
 
+body .exams-list-main .main-section .search-bar {
+  margin: 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
+}
+
+body .exams-list-main .main-section .search-bar input {
+  border: 1px solid #333333;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 20px;
+  background: none;
+  font-family: inherit;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
 body .exams-list-main .main-section .exam-list {
   margin-top: 30px;
 }

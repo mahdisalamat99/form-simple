@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exams-list.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>لیست محصولات </title>
+</head>
+<body>
+    <div class="exams-list-main">
+        <div class="side-section">
+            sideBar
+        </div>
+        <div class="main-section">
+            <div class="title">
+                <h1>لیست  محصولات</h1>
+                <button onclick="openExamModal()">ایجاد محصول جدید</button>
+            </div>
+            <div class="search-bar">
+                <p>جستجوی محصول</p>
+                <input type="text" placeholder="اسم محصول را وارد کنید" id="search-product" onkeyup="printExam(event)">
+            </div>
+            <div class="exam-list">
+                <div class="header">
+                    <span>ردیف</span>
+                    <span>کد محصول</span>
+                    <span>نام محصول </span>
+                    <span>تاریخ ثبت</span>
+                    <span> تعداد </span>
+                    <span> قیمت محصول</span>
+                    <span>موجود</span>
+                    <span>امکانات</span>
+                </div>
+                <div class="content" id="exams-containter">
+              
+                </div>
+                <div class="backdrop" onclick="closeExamModal()">
+                    <div class="modal" onclick="event.stopPropagation()">
+                        <div class="modal-content">
+                            <div class="form">
+                                <label for="exam-name" >نام محصول</label>
+                                <div class="input-container">
+                                    <input type="text" name="exam-name" id="exam-name">
+                                    <span id="alert-ms">لطفا نام محصول را وارد کنید</span>
+                                </div>
+                            </div>
+                            <button id="add-exam-btn" onclick="addExam(event)">افزودن</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="resault"></div>
+    </div>
+    <script src="js/exam-list.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            // $(".main-section").load("test.html");
+
+            // $.get('test.html', function(data){
+            //     $('.resault').html(data);
+            // })
+
+            $.ajax({
+                method : 'GET',
+                url : 'https://jsonplaceholder.typicode.com/posts',
+                dataType : 'json',
+            }).done(function(data){
+                console.log(data);
+                $.map(data,function(post , i){
+                    $('#exams-containter').append('<h3>'+ post.title +'</h3><p>'+ post.body +'</p>')
+                })
+            })
+        })
+    </script> -->
+</body>
+</html>
