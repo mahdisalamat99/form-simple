@@ -523,4 +523,74 @@ body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content b
     padding: 8px 12px;
   }
 }
+
+body .exams-list-main .main-section .exam-list .delete-backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  display: none;
+}
+
+body .exams-list-main .main-section .exam-list .delete-backdrop.open {
+  display: block;
+}
+
+body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  width: 330px;
+  background: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
+    width: 250px;
+  }
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content {
+    margin: auto;
+  }
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content p {
+    font-size: 16px;
+  }
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button {
+    border: none;
+    outline: none;
+    background: #333333;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button:hover {
+    background: #4d4d4d;
+  }
+}
+
+@media (max-width: 425px) and (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button.yes {
+    background: #279c27;
+  }
+  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button.no {
+    background: #e45151;
+  }
+}
 /*# sourceMappingURL=exams-list.css.map */
