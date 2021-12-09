@@ -212,7 +212,7 @@ html {
   font-family: dana;
 }
 
-body .exams-list-main {
+body .products-list-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,7 @@ body .exams-list-main {
           align-items: center;
 }
 
-body .exams-list-main .side-section {
+body .products-list-main .side-section {
   position: fixed;
   width: 160px;
   background: #C4C4C4;
@@ -229,12 +229,12 @@ body .exams-list-main .side-section {
 }
 
 @media (max-width: 768px) {
-  body .exams-list-main .side-section {
+  body .products-list-main .side-section {
     display: none;
   }
 }
 
-body .exams-list-main .main-section {
+body .products-list-main .main-section {
   background: white;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -245,13 +245,13 @@ body .exams-list-main .main-section {
 }
 
 @media (max-width: 768px) {
-  body .exams-list-main .main-section {
+  body .products-list-main .main-section {
     margin-right: 0;
     padding: 30px 15px;
   }
 }
 
-body .exams-list-main .main-section .title {
+body .products-list-main .main-section .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,12 +264,12 @@ body .exams-list-main .main-section .title {
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .title h1 {
+  body .products-list-main .main-section .title h1 {
     font-size: 22px;
   }
 }
 
-body .exams-list-main .main-section .title button {
+body .products-list-main .main-section .title button {
   border: none;
   outline: none;
   background: #333333;
@@ -281,18 +281,18 @@ body .exams-list-main .main-section .title button {
   cursor: pointer;
 }
 
-body .exams-list-main .main-section .title button:hover {
+body .products-list-main .main-section .title button:hover {
   background: #4d4d4d;
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .title button {
+  body .products-list-main .main-section .title button {
     font-size: 12px;
     padding: 8px 12px;
   }
 }
 
-body .exams-list-main .main-section .search-bar {
+body .products-list-main .main-section .search-bar {
   margin: 20px 0;
   width: 100%;
   display: -webkit-box;
@@ -307,7 +307,7 @@ body .exams-list-main .main-section .search-bar {
   gap: 30px;
 }
 
-body .exams-list-main .main-section .search-bar input {
+body .products-list-main .main-section .search-bar input {
   border: 1px solid #333333;
   border-radius: 4px;
   outline: none;
@@ -319,11 +319,11 @@ body .exams-list-main .main-section .search-bar input {
           flex: 0.4;
 }
 
-body .exams-list-main .main-section .exam-list {
+body .products-list-main .main-section .product-list {
   margin-top: 30px;
 }
 
-body .exams-list-main .main-section .exam-list .header {
+body .products-list-main .main-section .product-list .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,29 +340,29 @@ body .exams-list-main .main-section .exam-list .header {
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .header {
+  body .products-list-main .main-section .product-list .header {
     padding: 14px 10px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .header span {
+body .products-list-main .main-section .product-list .header span {
   font-size: 14px;
   font-weight: bolder;
 }
 
-body .exams-list-main .main-section .exam-list .content {
+body .products-list-main .main-section .product-list .content {
   margin-top: 20px;
   padding: 15px 30px;
   padding-left: 0;
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .content {
+  body .products-list-main .main-section .product-list .content {
     padding: 15px 0px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .content .row {
+body .products-list-main .main-section .product-list .content .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,18 +375,18 @@ body .exams-list-main .main-section .exam-list .content .row {
   margin: 10px 0;
 }
 
-body .exams-list-main .main-section .exam-list .content .row p {
+body .products-list-main .main-section .product-list .content .row p {
   color: #333333;
   font-weight: bold;
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .content .row p {
+  body .products-list-main .main-section .product-list .content .row p {
     font-size: 14px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .content .row .buttons button {
+body .products-list-main .main-section .product-list .content .row .buttons button {
   border: none;
   outline: none;
   background: #333333;
@@ -398,18 +398,18 @@ body .exams-list-main .main-section .exam-list .content .row .buttons button {
   cursor: pointer;
 }
 
-body .exams-list-main .main-section .exam-list .content .row .buttons button:hover {
+body .products-list-main .main-section .product-list .content .row .buttons button:hover {
   background: #4d4d4d;
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .content .row .buttons button {
+  body .products-list-main .main-section .product-list .content .row .buttons button {
     font-size: 12px;
     padding: 8px 12px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .backdrop {
+body .products-list-main .main-section .product-list .backdrop {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -421,11 +421,11 @@ body .exams-list-main .main-section .exam-list .backdrop {
   display: none;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop.open {
+body .products-list-main .main-section .product-list .backdrop.open {
   display: block;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal {
+body .products-list-main .main-section .product-list .backdrop .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -438,16 +438,16 @@ body .exams-list-main .main-section .exam-list .backdrop .modal {
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .backdrop .modal {
+  body .products-list-main .main-section .product-list .backdrop .modal {
     width: 250px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content {
   margin: auto;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +458,7 @@ body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form {
+  body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -470,11 +470,11 @@ body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .
   }
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form label {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form label {
   min-width: 40px;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container input {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form .input-container input {
   padding: 10px 15px;
   outline: none;
   border-radius: 5px;
@@ -485,22 +485,22 @@ body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container input {
+  body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form .input-container input {
     width: 100%;
   }
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container span {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form .input-container span {
   display: none;
   margin-top: 15px;
   color: red;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content .form .input-container span.active {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content .form .input-container span.active {
   display: block;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content button {
   border: none;
   outline: none;
   background: #333333;
@@ -513,18 +513,18 @@ body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content b
   margin-top: 30px;
 }
 
-body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button:hover {
+body .products-list-main .main-section .product-list .backdrop .modal .modal-content button:hover {
   background: #4d4d4d;
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .backdrop .modal .modal-content button {
+  body .products-list-main .main-section .product-list .backdrop .modal .modal-content button {
     font-size: 12px;
     padding: 8px 12px;
   }
 }
 
-body .exams-list-main .main-section .exam-list .delete-backdrop {
+body .products-list-main .main-section .product-list .delete-backdrop {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -536,11 +536,11 @@ body .exams-list-main .main-section .exam-list .delete-backdrop {
   display: none;
 }
 
-body .exams-list-main .main-section .exam-list .delete-backdrop.open {
+body .products-list-main .main-section .product-list .delete-backdrop.open {
   display: block;
 }
 
-body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
+body .products-list-main .main-section .product-list .delete-backdrop .delete-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -553,16 +553,16 @@ body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal {
     width: 250px;
   }
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content {
     margin: auto;
   }
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content p {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content p {
     font-size: 16px;
   }
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content button {
     border: none;
     outline: none;
     background: #333333;
@@ -573,23 +573,23 @@ body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal {
     font-size: 14px;
     cursor: pointer;
   }
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button:hover {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content button:hover {
     background: #4d4d4d;
   }
 }
 
 @media (max-width: 425px) and (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content button {
     font-size: 12px;
     padding: 8px 12px;
   }
 }
 
 @media (max-width: 425px) {
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button.yes {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content button.yes {
     background: #279c27;
   }
-  body .exams-list-main .main-section .exam-list .delete-backdrop .delete-modal .modal-content button.no {
+  body .products-list-main .main-section .product-list .delete-backdrop .delete-modal .modal-content button.no {
     background: #e45151;
   }
 }

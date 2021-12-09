@@ -9,20 +9,20 @@
     <title>لیست محصولات </title>
 </head>
 <body>
-    <div class="exams-list-main">
+    <div class="products-list-main">
         <div class="side-section">
             sideBar
         </div>
         <div class="main-section">
             <div class="title">
                 <h1>لیست  محصولات</h1>
-                <button onclick="openExamModal()">ایجاد محصول جدید</button>
+                <button onclick="openProductModal()">ایجاد محصول جدید</button>
             </div>
             <div class="search-bar">
                 <p>جستجوی محصول</p>
-                <input type="text" placeholder="اسم محصول را وارد کنید" id="search-product" onkeyup="printExam(event)">
+                <input type="text" placeholder="اسم محصول را وارد کنید" id="search-product" onkeyup="printProduct(event)">
             </div>
-            <div class="exam-list">
+            <div class="product-list">
                 <div class="header">
                     <span>ردیف</span>
                     <span>کد محصول</span>
@@ -32,20 +32,20 @@
                     <span> قیمت محصول</span>
                     <span>امکانات</span>
                 </div>
-                <div class="content" id="exams-containter">
+                <div class="content" id="products-containter">
               
                 </div>
-                <div class="backdrop" onclick="closeExamModal()">
+                <div class="backdrop" onclick="closeProductModal()">
                     <div class="modal" onclick="event.stopPropagation()">
                         <div class="modal-content">
                             <div class="form">
-                                <label for="exam-name" >نام محصول</label>
+                                <label for="product-name" >نام محصول</label>
                                 <div class="input-container">
-                                    <input type="text" name="exam-name" id="exam-name">
+                                    <input type="text" name="product-name" id="product-name">
                                     <span id="alert-ms">لطفا نام محصول را وارد کنید</span>
                                 </div>
                             </div>
-                            <button id="add-exam-btn" onclick="addExam(event)">افزودن</button>
+                            <button id="add-product-btn" onclick="addProduct(event)">افزودن</button>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@
         </div>
         <div class="resault"></div>
     </div>
-    <script src="js/exam-list.js"></script>
+    <script src="js/product-list.js"></script>
     <script>
        
     </script>
